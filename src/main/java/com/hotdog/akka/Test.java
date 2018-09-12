@@ -17,7 +17,7 @@ public class Test {
     }};
 
 
-    public static void main(String[] args) {
+    public static void mai1n(String[] args) {
         Entrance entrance = new Entrance();
 
 
@@ -46,13 +46,13 @@ public class Test {
         }
         return "取完了";
     }
-    public static void masin(String[] args) {
+    public static void main(String[] args) {
         Entrance entrance = new Entrance();
 
 
         System.out.println(Thread.currentThread().getName());
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 50; i++) {
 
             int da = i;
             new Thread("" + da) {

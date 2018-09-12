@@ -3,16 +3,17 @@ package com.hotdog.akka;
 import akka.actor.AbstractActor;
 import akka.actor.Props;
 import akka.actor.Status;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
-
+@Component("workerActor")
+@Scope("prototype")
 public class ReceiveRequestActor extends AbstractActor {
     //#greeter-messages
 
-    static public Props props() {
-        return Props.create(ReceiveRequestActor.class, () -> new ReceiveRequestActor());
-    }
+
 
     private Map<Integer, Integer> data = new HashMap<>();
 
