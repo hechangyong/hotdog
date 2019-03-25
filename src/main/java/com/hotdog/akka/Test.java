@@ -57,7 +57,7 @@ public class Test {
             int da = i;
             new Thread("" + da) {
                 public void run() {
-                    System.out.println("Thread: " + getName() + " running  " + entrance.main(da));
+                    System.out.println("Thread: " + getName() + " running, rresult : " + entrance.main(da));
                  }
 
             }.start();

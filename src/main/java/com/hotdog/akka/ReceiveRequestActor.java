@@ -36,8 +36,8 @@ public class ReceiveRequestActor extends AbstractActor {
                     try {
                         System.out.println("rc.param: " + rc.param);
                         String code = getRedemption(Integer.parseInt(rc.param));
-                        getSender().tell(code, getSelf());
-                    } catch (Exception e) {
+                        System.out.println("result: " + code);
+                     } catch (Exception e) {
                         getSender().tell(new Status.Failure(e), getSelf());
                         throw e;
                     }
