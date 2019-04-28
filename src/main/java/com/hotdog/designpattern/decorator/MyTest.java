@@ -5,7 +5,8 @@ package com.hotdog.designpattern.decorator;
  * @Date: 2018/12/25 18:00
  * @Version 1.0
  * @desc 装饰者模式
- *
+ *  装饰者该做的事，就是增加行为到被包装对象上，
+ *  当需要窥视装饰链中的每一个装饰者时，这就超出他们的天赋了。
  */
 public class MyTest {
 

@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * @Author: hecy
  * @Date: 2019/3/25 15:26
  * @Version 1.0
+ * 有可供观察的数据
  */
 public class WeatherData implements Subject {
     private ArrayList<Observer> observers = new ArrayList<>();

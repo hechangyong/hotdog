@@ -6,8 +6,9 @@ import java.util.Observable;
  * @Author: hecy
  * @Date: 2019/3/25 16:02
  * @Version 1.0
+ * 观察数据是否有变化的类， 具体的任务类
  */
-public class ObserverImpl  extends Observable implements Observer, DisplayElement {
+public class ObserverImpl   implements Observer, DisplayElement {
     private WeatherDataParam weatherDataParam ;
 
     private Subject webtherData;
